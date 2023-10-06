@@ -1,0 +1,30 @@
+version: 0.2
+
+phases:
+  install: 
+    commands:
+      - pip install --upgrade pip
+      - pip install --upgrade awscli
+  build:
+    commands:
+      - ls
+      - |
+          if [ $CODEBUILD_BUILD_NUMBER -eq 1 ];
+            then
+             echo "1st build failed"
+             exit 1
+          else
+            echo " Started pipeline execution "
+          
+          fi
+      - echo test
+      - echo Entered the build phase...
+      - aws s3 rm s3://$BUCKET_NAME/$S3_Key_CFT_Location --recursive
+      - aws s3 sync templates/ s3://$BUCKET_NAME/$S3_Key_CFT_Location
+      - echo Artifacts uploaded successfully
+
+# To identify the new files/templates
+artifacts:
+  files:
+    - '**/*'
+  # base-directory: 'dist'
