@@ -1,0 +1,21 @@
+{
+    "StackName": "ec2-v2",
+    "CFT_Name": "ec2.yaml",
+	"ParentStack" : "<Parent StackName>(applicable only to nested stacks)"
+     "Parameters": {
+        "retentionflowlogs": "90",
+        "transitgatewayid": "",
+        "connectbacktodxc": "false",
+        "snaPublic": "true",
+        "VpcCidr": "10.2.0.0/16",
+        "snbPublic": "true",
+        "securegatewaycidr": "",
+        "dxcroute2": "",
+        "dxcroute3": "",
+        "securegatewaycidr6": "",
+        "VpcName": "ManagementVPC-v2",
+        "dxcroute1": "",
+        "AWSPEFlowLogsRole": "/DXC/IAMResources/VPCFlowLogsRoleArn",
+        "pCreateNatGateway":"false"
+    }
+ }
