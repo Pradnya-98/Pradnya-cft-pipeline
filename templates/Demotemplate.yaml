@@ -3,7 +3,7 @@ Description: updated template Test Template CICD execution
 Parameters:
   pDXCS3BucketName:
     Type: String
-    Description: AWS S3 bucket name which holds the lambda deployment package zip file
+    Description: AWS S3 bucket name which can hold the lambda deployment package zip file
     Default: dxc.prod.obe
   pPlatformVersion:
     Type: String
