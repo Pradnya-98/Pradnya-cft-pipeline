@@ -13,7 +13,7 @@ Parameters:
 
   ImageIdParameter:
     Type: String
-    Default: ami-0939946e2a6d3b92c
+    Default: ami-00112c06006bb2849
     Description: Amazon Machine Image (AMI) ID
 
   KeyNameParameter:
