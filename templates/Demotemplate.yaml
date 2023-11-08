@@ -1,0 +1,48 @@
+AWSTemplateFormatVersion: 2010-09-09
+Description: updated template Test Template CICD execution
+Parameters:
+  pDXCS3BucketName:
+    Type: String
+    Description: AWS S3 bucket name which holds the lambda deployment package zip file
+    Default: dxc.prod.obe
+  pPlatformVersion:
+    Type: String
+    Description: "Platform version is used to retrieve Lambda functions from the
+      correct S3 directory. Ex: release-2.0.0"
+    Default: No-Value
+  ptestVersion:
+    Type: String
+    Description: "Platform version is used to retrieve Lambda functions from the
+      correct S3 directory. Ex: release-2.0.0"
+    Default: testversion
+  pbranchname:
+    Type: String
+    Description: "Platform version is used to retrieve Lambda functions from the
+      correct S3 directory. Ex: release-2.0.0"
+    Default: main
+  pusername:
+    Type: String
+    Description: "Platform version is used to retrieve Lambda functions from the
+      correct S3 directory. Ex: release-2.0.0"
+    Default: dhivyaa
+  pupdateparam:
+    Type: String
+    Description: yes or no
+    Default: yes
+Resources:
+  rTestSMM:
+    Type: AWS::SSM::Parameter
+    Properties:
+      Name: bucketname-ssm
+      Type: String
+      Value: pDXCS3BucketName
+      Description: BucketName
+  rbranch:
+    Type: AWS::SSM::Parameter
+    Properties:
+      Name: branch
+      Type: String
+      Value: pbranchname
+      Description: username
+  
+  
