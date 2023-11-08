@@ -1,5 +1,5 @@
 AWSTemplateFormatVersion: 2010-09-09
-Description: updated template Test Template CICD execution
+Description: updated template to Test Template CICD execution
 Parameters:
   pDXCS3BucketName:
     Type: String
