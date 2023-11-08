@@ -25,6 +25,6 @@ Resources:
   MyEC2Instance:
     Type: AWS::EC2::Instance
     Properties:
-      InstanceType: !Ref InstanceTypeParameter
-      ImageId: !Ref ImageIdParameter
-      KeyName: !Ref KeyNameParameter
+      InstanceType: Ref InstanceTypeParameter
+      ImageId: Ref ImageIdParameter
+      KeyName: Ref KeyNameParameter
