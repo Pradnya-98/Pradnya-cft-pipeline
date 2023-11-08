@@ -1,5 +1,5 @@
 {
-    "StackName": "ec2-v2",
+    "StackName": "feature-cft-ec2",
     "CFT_Name": "ec2.yaml",
 	"ParentStack" : "<Parent StackName>(applicable only to nested stacks)"
      "Parameters": {
