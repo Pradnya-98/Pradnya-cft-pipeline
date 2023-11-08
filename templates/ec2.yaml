@@ -13,12 +13,12 @@ Parameters:
 
   ImageIdParameter:
     Type: String
-    Default: ami-00112c06006bb2849
+    Default: ami-059cdad1f35de63c0
     Description: Amazon Machine Image (AMI) IDs
 
   KeyNameParameter:
     Type: String
-    Default: Dxcms-Ami-Hardening-Ec2-Key-Pair
+    Default: mstest-key
     Description: EC2 Key Pair Name
 
 Resources:
