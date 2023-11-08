@@ -4,7 +4,7 @@
 	"ParentStack" : "<Parent StackName>(applicable only to nested stacks)"
      "Parameters": {
         "InstanceTypeParameter": "t2.medium",
-        "ImageIdParameter": "ami-0bae9571f254ec073",
+        "ImageIdParameter": "ami-0bf8e703278ea0245",
         "KeyNameParameter": "Dxcms-Ami-Hardening-Ec2-Key-Pair"
         
     }
