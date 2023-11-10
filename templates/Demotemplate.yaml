@@ -47,7 +47,7 @@ Resources:
   rbranchnew:
     Type: AWS::SSM::Parameter
     Properties:
-      Name: branch
+      Name: branch2
       Type: String
       Value: pjnranchname
       Description: username
